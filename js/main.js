@@ -164,14 +164,14 @@ function CalcularSolvencia(){
     document.getElementById("txtSolvencia").value = solvencia.toFixed(2);
     if ((activoCorriente+activoNoCorriente) > (pasivoCorriente+pasivoNoCorriente)) {
         document.getElementById("txtMensajeSol").value = "Empresa SI tiene suficientes Activos para Pagar Deudas en un Riesgo de Insolvencia";
-        document.getElementById("txtMensajeSol").setAttribute("style", "border:white; text-align:center; color:green; font-family:Arial, Helvetica, sans-serif; font-size: 16px;");
+        document.getElementById("txtMensajeSol").setAttribute("style", "border:white; text-align:center; color:green; font-family:Arial, Helvetica, sans-serif; font-size: 19px;");
     }
     else{
         
     }
     if ((activoCorriente+activoNoCorriente) < (pasivoCorriente+pasivoNoCorriente)) {
         document.getElementById("txtMensajeSol").value = "Empresa NO tiene suficientes Activos para Pagar Deudas en un Riesgo de Insolvencia";
-        document.getElementById("txtMensajeSol").setAttribute("style", "border:white; text-align:center; color:red; font-family:Arial, Helvetica, sans-serif; font-size: 16px;");
+        document.getElementById("txtMensajeSol").setAttribute("style", "border:white; text-align:center; color:red; font-family:Arial, Helvetica, sans-serif; font-size: 19px;");
     }
     else{
 
