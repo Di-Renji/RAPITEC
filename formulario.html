@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>R A P I T E C</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">  
+	<link href="../IESTP-App1/images/logo5.png" rel="icon">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="page-content" style="background-image: url('images/wizard-v4.jpg')">
+		<div class="wizard-v4-content">
+			<div class="wizard-form" style="background-color: white; margin: 50px; border-radius: 30px; padding-bottom: 20px;">
+				<div class="wizard-header" style="display:inline;">
+					<div style="background-color: rgb(23, 65, 182); border-radius: 30px 30px 0 0;">
+						<br>
+						<div class="logo" style="display:inline-block;">
+							<img src="../IESTP-App1/images/logo5.png" alt="" style="width: 140px;">
+						</div>
+						<div class="titulo" style="display:inline-block;  width: 480px;">
+							<div class="texto">
+								<h1 class="heading" style="display:inline; color: aliceblue; font-size: 55px;">R A P I T E C</h1> <br><br>
+							</div>
+							<div class="desc">
+								<p style="display:inline-block ; font-size:medium; color: antiquewhite;">Aplicativo para Determinar los Indicadores Financieros de las Mypes del Distrito de Florencia de Mora</p>
+							</div>
+						</div>
+						<br><br>						
+					</div>	
+					
+				</div>
+				<br>
+		        <form id="formID" class="form-register" >
+		        	<div id="form-total" >
+
+		        		<!------------------------------------------------------- SECTION 1 -------------------------------------------------------->
+						<!--------------------------------------------------- UTILIDAD POR MES-------------------------------------------------------->
+			            <h2 style="text-align: center;">
+			            	<span class="step-icon"><i class="fa-solid fa-money-bill-transfer"></i></span>
+			            	<span class="step-text" style="background-color: rgb(255, 255, 255); text-align: center; font-size: 12px; width: 60px; font-style: italic;">Utilidad por Mes</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3 style="font-family: Trebuchet MS; font-size: 30px; letter-spacing: 6px;	word-spacing: 0px; color: #0124b3;	font-weight: bold; font-style: normal; font-variant: normal;">
+									UTILIDAD POR MES:
+								</h3> <br><br>							
+								<div class="form-row">
+									<div class="form-holder">
+										<span class="label" style="margin-left: 10px;">Fecha :</span> <br>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<select name="position" id="mes">
+											<option value="Position" disabled selected>- Seleccione un Mes -</option>
+											<option value="Enero">Enero</option>
+											<option value="Febrero">Febrero</option>
+											<option value="Marzo">Marzo</option>
+											<option value="Abril">Abril</option>
+											<option value="Mayo">Mayo</option>
+											<option value="Junio">Junio</option>
+											<option value="Julio">Julio</option>
+											<option value="Agosto">Agosto</option>
+											<option value="Setiembre">Septiembre</option>
+											<option value="Octubre">Octubre</option>
+											<option value="Noviembre">Noviembre</option>
+											<option value="Diciembre">Diciembre</option>
+										</select>
+									</div>
+									<div class="form-holder">
+										<select name="position" id="año">
+											<option value="Position" disabled selected>- Seleccione un Año-</option>
+											<option value="2022">2022</option>
+											<option value="2023">2023</option>
+											<option value="2024">2024</option>
+											<option value="2025">2025</option>
+											<option value="2026">2026</option>
+										</select>
+									</div>
+								</div>								
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtDineroUti" name="" required>
+											<span class="label">Otros Ingresos (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtVentas" name="" required>
+											<span class="label">Ventas (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtCompras" name="" required>
+											<span class="label">Compras (Costo de Venta) (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtPlanilla" name="" required>
+											<span class="label">Planilla (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtGastos" name="" required>
+											<span class="label">Gastos de Servicios Básicos (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtImpuesto" name="" required>
+											<span class="label">Impuesto (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								
+								<br><br>
+								
+								<input id="btnLimpiarUti" type="button" value="Limpiar Datos" style="cursor:pointer;" onclick="Limpiar()">
+								<input id="btnUtilidad" type="button" value="Calcular UTILIDAD" style="cursor:pointer;" onclick="CalcularUtilidad()"> <br><br><br><br>
+								
+
+								<h4 style=" color: rgb(204, 3, 3);">
+									El Valor Total de la Utilidad es (S/.) :
+								</h4><br>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<b style="font-size: 50px;">
+												<input id="txtUtilidad" type="text" class="form-control" name="utilidad" readonly="readonly" required>
+											</b>
+										</label>
+									</div>
+								</div>
+							</div>
+			            </section>
+
+
+						<!----------------------------------------------------- SECTION 2 -------------------------------------------------------------->
+						<!------------------------------------------------ RATIO DE LIQUIDEZ ----------------------------------------------------------->
+			            <h2>
+			            	<span class="step-icon"><i class="fa-sharp fa-solid fa-money-check-dollar"></i></span>
+			            	<span class="step-text" style="background-color: rgb(255, 255, 255); text-align: center; font-size: 12px; width: 60px; font-style: italic;">Ratio de Liquidez</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3 style="font-family: Trebuchet MS; font-size: 30px; letter-spacing: 6px;	word-spacing: 0px; color:  #0124b3; font-weight: bold; font-style: normal; font-variant: normal;">
+									RATIO DE LIQUIDEZ
+								</h3><br><br>								
+								<h4>ACTIVO CORRIENTE</h4>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtDineroLiq" name="" required>
+											<span class="label">Dinero en Efectivo (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtMercaderia" name="" required>
+											<span class="label">Existencias (Mercadería) (S/.):</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtAhorros" name="" required>
+											<span class="label">Valores Negociables (S/.):</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtCuentas" name="" required>
+											<span class="label">Cuentas por Cobrar Comerciales (S/.):</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtOtrasCuentas" name="" required>
+											<span class="label">Otras Cuentas por Cobrar (S/.):</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<input id="btnCalcularActivoCorriente" type="button" value="Calcular Activo Corriente" style="cursor:pointer; display: inline-block;" onclick="CalcularActivoCorriente()">
+
+								<h5 style="display:inline-block; padding-left: 20px;">
+									Activo Corriente (S/.)     = 
+									<input id="txtTotalActivoCorriente" class="form-control" readonly="readonly" style="text-align: center; width: 340px; height: 28px; font-style: italic; color: rgb(18, 64, 103); border: beige; font-size: 16px;" type="text" id="res"> 
+								</h5> <br><br> <br>
+
+								<h4>PASIVO CORRIENTE</h4>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtPrestamo" name="" required>
+											<span class="label">Préstamo a Corto Plazo (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtCuentas2" name="" required>
+											<span class="label">Cuentas por Pagar Comerciales (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtOtrasCuentas2" name="" required>
+											<span class="label">Otras Cuentas por Pagar (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								
+								<input id="btnCalcularPasivoCorriente" type="button" value="Calcular Pasivo Corriente" style="cursor:pointer; display: inline-block;" onclick="CalcularPasivoCorriente()">
+
+								<h5 style="display:inline-block; padding-left: 20px;">
+									Pasivo Corriente (S/.)     = 
+									<input id="txtTotalPasivoCorriente" class="form-control" readonly="readonly" style="text-align: center; width: 340px; height: 28px; font-style: italic; color: rgb(18, 64, 103); border: beige; font-size: 16px;" type="text" id="res"> 
+								</h5>
+								<br><br><br>
+
+								<input id="btnLimpiarLiq" type="button" value="Limpiar Datos" style="cursor:pointer;" onclick="Limpiar()">
+								<input id="btnLiquidez" type="button" value="Calcular LIQUIDEZ" style="cursor:pointer;" onclick="CalcularLiquidez()"> <br><br><br>
+														
+								<h4 style=" color: rgb(204, 3, 3);">
+									El Valor Total de la Liquidez es (S/.) :
+								</h4><br>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<b>
+												<input id="txtLiquidez" type="text" class="form-control" readonly="readonly" required>
+											</b>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<b>
+												<input id="txtMensajeLiq" style="border:white;" type="text" readonly="readonly" name="liquidez" required>
+											</b>
+										</label>
+									</div>
+								</div>
+								
+							</div>
+			            </section>
+
+
+			            <!----------------------------------------------------- SECTION 3 ----------------------------------------------------------->
+						<!----------------------------------------------- RATIO DE RENTABILIDAD -------------------------------------------------------->
+			            <h2>
+			            	<span class="step-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+			            	<span class="step-text" style="background-color: rgb(255, 255, 255); text-align: center; font-size: 12px; width: 60px; font-style: italic;">Ratio de Rentabilidad</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3 style="font-family: Trebuchet MS; font-size: 30px; letter-spacing: 6px;	word-spacing: 0px; color:#0124b3; font-weight: bold; font-style: normal; font-variant: normal;">
+									RATIO DE RENTABILIDAD
+								</h3> <br><br>
+								<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<label class="form-row-inner">
+												<input type="text" class="form-control" style="text-align: center;" id="txtCapital" name="" required>
+												<span class="label">Capital (S/.) :</span>
+												<span class="border"></span>
+											</label>
+										</div>
+								</div> <br><br>
+
+								<input id="btnLimpiarRen" type="button" value="Limpiar Datos" style="cursor:pointer;" onclick="Limpiar()">
+								<input id="btnRentabilidad" type="button" value="Calcular RENTABILIDAD" style="cursor:pointer;" onclick="CalcularRentabilidad()"> <br><br><br>
+
+								<h4 style=" color: rgb(204, 3, 3);">
+									El Valor Total de la RENTABILIDAD es (S/.) :
+								</h4><br>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<b>
+												<input id="txtRentabilidad" type="text" class="form-control" readonly="readonly" required>
+											</b>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<b>
+												<input id="txtMensajeRent" style="border:white;" type="text" readonly="readonly" name="Rentabilidad" required>
+											</b>
+										</label>
+									</div>
+								</div>							
+							</div>
+			            </section>
+						
+
+			            <!--------------------------------------------------------- SECTION 4 ----------------------------------------------------->
+						<!---------------------------------------------------- RATIO DE SOLVENCIA -------------------------------------------------------->
+			            <h2>
+			            	<span class="step-icon"><i class="fa-solid fa-money-bill-trend-up"></i></span>
+			            	<span class="step-text" style="background-color: rgb(255, 255, 255); text-align: center; font-size: 12px; width: 60px; font-style: italic;">Ratio de Solvencia</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3 style="font-family: Trebuchet MS; font-size: 30px; letter-spacing: 6px;	word-spacing: 0px; color: #0124b3; font-weight: bold; font-style: normal; font-variant: normal;">
+									RATIO DE SOLVENCIA
+								</h3><br><br>							
+								<h4>ACTIVO NO CORRIENTE</h4>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtLocal" name="" required>
+											<span class="label">Valor de Local (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtMarca" name="" required>
+											<span class="label">Valor de Marca y Patentes (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtAuto" name="" required>
+											<span class="label">Valor de Vehículo (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtMoviliario" name="" required>
+											<span class="label">Valor de Moviliario (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtMaquinaria" name="" required>
+											<span class="label">Valor de Maquinaria (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div> 
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtCuentas3" name="" required>
+											<span class="label">Cuentas por Cobrar a Largo Plazo (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div> 
+								<input id="btnCalcularNoActivoCorriente" type="button" value="Calcular Activo No Corriente" style="cursor:pointer; display: inline-block;" onclick="CalcularActivoNoCorriente()">
+
+								<h5 style="display:inline-block; padding-left: 20px;">
+									Activo No Corriente (S/.)     = 
+									<input id="txtTotalActivoNoCorriente" class="form-control" readonly="readonly" style="text-align: center; width: 340px; height: 28px; font-style: italic; color: rgb(18, 64, 103); border: beige; font-size: 16px;" type="text" > 
+								</h5> <br><br> <br>
+								
+								<h4>PASIVO NO CORRIENTE</h4>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" style="text-align: center;" id="txtCredito" name="" required>
+											<span class="label">Cuentas por Pagar a Largo Plazo (S/.) :</span>
+					  						<span class="border"></span>
+										</label>
+									</div>
+								</div>
+
+								<input id="btnLimpiarSol" type="button" value="Limpiar Datos" style="cursor:pointer;" onclick="Limpiar()">
+								<input id="btnSolvencia" type="button" value="Calcular SOLVENCIA" style="cursor:pointer;" onclick="CalcularSolvencia()"> <br><br><br>
+														
+								<h4 style=" color: rgb(204, 3, 3);">
+									El Valor Total del Ratio de Solvencia es (S/.) :
+								</h4><br>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<b>
+												<input id="txtSolvencia" type="text" class="form-control" readonly="readonly" required>
+											</b>
+										</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label class="form-row-inner">
+											<b>
+												<input id="txtMensajeSol" style="border:white;" type="text" readonly="readonly" required>
+											</b>
+										</label>
+									</div>
+								</div>			
+								
+							</div>
+			            </section>
+						
+						
+
+						<!--------------------------------------------------------- SECTION 5 ------------------------------------------------------------>
+						<!---------------------------------------------------- REPORTE DE INDICADORES-------------------------------------------------------->
+			            <h2>
+			            	<span class="step-icon"><i class="fa-sharp fa-solid fa-file-invoice"></i></span>
+			            	<span class="step-text" style="background-color: rgb(255, 255, 255); text-align: center; font-size: 12px; width: 60px; font-style: italic;">Reporte de Indicadores</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<h3 style="font-family: Trebuchet MS; font-size: 30px; letter-spacing: 6px;	word-spacing: 0px; color: #0124b3; font-weight: bold; font-style: normal; font-variant: normal;">
+									REPORTE DE INDICADORES
+								</h3><br><br>
+								
+								<h4>Usuario : <input id="cajaRep1" class="cajaRep" type="text"> </h4> 
+								<br><br>
+
+								<h4>Fecha 	: <input id="cajaRep2" class="cajaRep" type="text"> </h4>
+								<br><br>
+								<table class="tftable">
+									<tr>
+										<th style="width: 10px; text-align: center; font-size: 16px;"> Nro. </th>
+										<th style="width: 150px; text-align: center;font-size: 16px;">INDICADOR</th>
+										<th style="width: 200px; text-align: center;font-size: 16px;">CANTIDAD</th>
+										<th style="text-align: center; font-size: 16px;">OBSERVACIÓN</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Utilidad por Mes</td>
+										<td><input type="text" id="valorUtilidad" readonly="readonly" style="border: white;"></td>
+										<td> - - - - - </td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Ratio de Liquidez</td>
+										<td><input type="text" id="valorLiquidez" readonly="readonly" style="border: white;"></td>
+										<td><input type="text" id="mensaLiquidez" readonly="readonly" style="border: white;"></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Ratio de Rentabilidad</td>
+										<td><input type="text" id="valorRentabilidad" readonly="readonly" style="border: white;"></td></td>
+										<td><input type="text" id="mensaRentabilidad" readonly="readonly" style="border: white;"></td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Ratio de Solvencia</td>
+										<td><input type="text" id="valorSolvencia" readonly="readonly" style="border: white;"></td></td>
+										<td><input type="text" id="mensaSolvencia" readonly="readonly" style="border: white;"></td>
+									</tr>
+
+								</table>
+
+									<br>						
+								
+								<div style="text-align: center;">
+									<input style="width: 50px; margin-top: 60px;" type="image" src="../IESTPFM-RAPITEC/images/impresora3.png" onclick="javascript:window.print()">
+								</div>
+									
+							
+							</div>
+							<br><br><br><br><br>	
+			            </section>
+						<br><br>
+												
+						<script>
+							//var valor = document.querySelector("a");
+							//var otro = valor.getAttribute("role");
+						</script>
+
+		        	</div>
+		        </form>
+			</div>
+
+
+			
+
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- JavaScript Bundle with Popper -->
+	
+</body>
+</html>
